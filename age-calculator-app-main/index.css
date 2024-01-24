@@ -1,0 +1,147 @@
+:root {
+    --blue: hsl(228, 45%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --offwhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    background-color: var(--offwhite);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 375px;
+    background-color: var(--white);
+    border-radius: 15px 15px 100px 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    max-width: 100px;
+}
+
+.result-group {
+    display: flex;
+    flex-direction: row;
+    margin-right: 8px;
+    max-width: 100px;
+}
+
+.input-label {
+    font-size: 12px;
+    color: var(--smokeyGrey);
+    margin-bottom: 8px;
+}
+
+.result-label {
+    font-size: 45px;
+    color: var(--smokeyGrey);
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.result-label.purple {
+    color: var(--purple);
+}
+
+.result-label.black {
+    color: var(--offBlack);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-field input {
+    align-self: stretch;
+    width: 67%;
+    padding: 8px;
+}
+
+.line-with-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--lightGrey);
+    margin-right: 10px;
+}
+
+.calculate-button {
+    background-color: var(--purple);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    margin-right: -16px;
+}
+
+.calculate-button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .input-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-group,
+    .result-group {
+        width: 30%;
+    }
+}

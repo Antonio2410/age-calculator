@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <form class="container" id="ageForm">
+            <div class="input-container">
+                <div class="input-group">
+                    <label class="input-label" for="day">DAY</label>
+                    <div class="input-field">
+                        <input type="text" id="day" placeholder="DD" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label" for="month">MONTH</label>
+                    <div class="input-field">
+                        <input type="text" id="month" placeholder="MM" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label" for="year">YEAR</label>
+                    <div class="input-field">
+                        <input type="text" id="year" placeholder="YYYY" required>
+                    </div>
+                </div>
+
+                <div class="error-message" id="overallError"></div>
+            </div>
+
+            <div class="line-with-button">
+                <div class="line"></div>
+                <button class="calculate-button">
+                    <img src="./assets/images/icon-arrow.svg" alt="Calculate">
+                </button>
+            </div>
+
+            <div class="result-container">
+                <div class="result-group">
+                    <div class="result-label purple years">--</div>
+                    <div class="result-label black">years</div>
+                </div>
+                <div class="result-group">
+                    <div class="result-label purple months">--</div>
+                    <div class="result-label black">months</div>
+                </div>
+                <div class="result-group">
+                    <div class="result-label purple days">--</div>
+                    <div class="result-label black">days</div>
+                </div>                
+            </div>
+        </form>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a>Antonio Aiello</a>.
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
